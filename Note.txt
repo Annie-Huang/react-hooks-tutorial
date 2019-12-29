@@ -21,6 +21,7 @@ React Hooks Tutorial - 14 - Fetching data with useEffect Part 3
 Important files:
 C:\react\react-hooks-tutorial\effect-hook\src\components\IntervalHookCounter.js
 C:\react\react-hooks-tutorial\effect-hook\src\components\DataFetching.js
+
 =================================================================================
 
 
