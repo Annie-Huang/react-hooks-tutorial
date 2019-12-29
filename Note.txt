@@ -6,6 +6,7 @@ UP TO:
 React Hooks Tutorial - 2 - useState Hook
 React Hooks Tutorial - 3 - useState with previous state
 React Hooks Tutorial - 4 - useState with object
+React Hooks Tutorial - 7 - useEffect after render
 
 =================================================================================
 
@@ -58,3 +59,4 @@ When dealing with objects or arrays. always make sure to spread your state varia
 =============================================================================
 
 C:\react\react-hooks-tutorial>create-react-app state-hook
+C:\react\react-hooks-tutorial>create-react-app effect-hook
