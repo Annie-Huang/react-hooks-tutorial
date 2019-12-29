@@ -9,7 +9,7 @@ const HookCounterOne = () => {
     useEffect(() => {
         console.log('useEffect - Updating document title');
         document.title = `You clicked ${count} times`;
-    });
+    }, [count]);
 
     return (
         <div>
