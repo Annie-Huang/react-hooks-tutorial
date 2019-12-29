@@ -2,6 +2,10 @@ https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A
 https://github.com/gopinav/React-Tutorials
 https://github.com/Annie-Huang/react-hooks-tutorial
 
+https://jsonplaceholder.typicode.com/
+https://jsonplaceholder.typicode.com/posts
+
+
 UP TO:
 React Hooks Tutorial - 2 - useState Hook
 React Hooks Tutorial - 3 - useState with previous state
