@@ -11,6 +11,8 @@ const DataFetching = () => {
         setIdFromButtonClick(id);
     };
 
+
+    // The reason it called useEffect is because it's linked to side effect
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
             .then(res => {

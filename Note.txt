@@ -73,11 +73,34 @@ New state value depends on the previous state value? You can pass a function to 
 When dealing with objects or arrays. always make sure to spread your state variable and then call the setter function
 
 
-3. Context
+4. Context
 #############################
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 e.g.
 language preference, UIP, authenticated user
+
+
+5. useReducer
+#############################
+useReducer is a hook that is used for state management
+It is an alternative to useState
+What's the different?
+useState is built using useReducer
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+
+reducer vs useReducer
+reducer in JavaScript                               | useReducer in React
+array.reduce(reducer, initialValue)                 | useReducer(reducer, initialState)
+singleValue = reducer(accumulator, itemValue)       | newState = reducer(currentState, action)
+reduce method returns a single value                | useReducer returns a pair of value. [newState, dispatch]
+
 
 
 
