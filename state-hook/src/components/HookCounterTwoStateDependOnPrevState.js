@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const HookCounterTwo = () => {
+const HookCounterTwoStateDependOnPrevState = () => {
     const initialCount = 0;
     const [count, setCount] = useState(initialCount);
 
@@ -29,4 +29,4 @@ const HookCounterTwo = () => {
     );
 };
 
-export default HookCounterTwo;
+export default HookCounterTwoStateDependOnPrevState;
