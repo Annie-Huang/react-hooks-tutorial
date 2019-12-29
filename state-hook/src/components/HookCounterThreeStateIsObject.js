@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const HookCounterThree = () => {
+const HookCounterThreeStateIsObject = () => {
     const [name, setName] = useState({firstName: '', lastName: ''})
     return (
         <div>
@@ -23,4 +23,4 @@ const HookCounterThree = () => {
     );
 };
 
-export default HookCounterThree;
+export default HookCounterThreeStateIsObject;
