@@ -9,6 +9,7 @@ React Hooks Tutorial - 4 - useState with object
 React Hooks Tutorial - 7 - useEffect after render
 React Hooks Tutorial - 8 - Conditionally run effects
 React Hooks Tutorial - 10 - useEffect with cleanup
+React Hooks Tutorial - 11 - useEffect with incorrect dependency
 
 =================================================================================
 
