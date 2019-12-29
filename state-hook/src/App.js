@@ -4,6 +4,7 @@ import ClassCounter from "./components/ClassCounter";
 import HookCounter from "./components/HookCounter";
 import HookCounterTwoStateDependOnPrevState from "./components/HookCounterTwoStateDependOnPrevState";
 import HookCounterThreeStateIsObject from "./components/HookCounterThreeStateIsObject";
+import HookCounterFourStateIsArray from "./components/HookCounterFourStateIsArray";
 
 function App() {
     return (
@@ -11,7 +12,8 @@ function App() {
             {/*<ClassCounter />*/}
             {/*<HookCounter/>*/}
             {/*<HookCounterTwoStateDependOnPrevState />*/}
-            <HookCounterThreeStateIsObject />
+            {/*<HookCounterThreeStateIsObject />*/}
+            <HookCounterFourStateIsArray/>
         </div>
     );
 }
