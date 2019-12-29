@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 
+// Check Note.txt for standard.
 const initialState = 0;
 const reducer = (state, action) => {
     // return newState;
@@ -16,13 +17,14 @@ const reducer = (state, action) => {
 };
 
 const CounterOne = () => {
-    useReducer(reducer, initialState);
+    const [count, dispatch] = useReducer(reducer, initialState);
 
     return (
         <div>
-            <button>Increment</button>
-            <button>Decrement</button>
-            <button>Reset</button>
+            <div>Count - {count}</div>
+            <button onClick={() => dispatch('increment')}>Increment</button>
+            <button onClick={() => dispatch('decrement')}>Decrement</button>
+            <button onClick={() => dispatch('reset')}>Reset</button>
         </div>
     );
 };
