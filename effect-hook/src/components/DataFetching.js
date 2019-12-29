@@ -7,12 +7,13 @@ const DataFetching = () => {
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(res => {
-                console.log(res)
+                console.log(res);
+                setPosts(res.data);
             })
             .catch(err => {
                 console.log(err);
             })
-    });
+    }, []);
 
     return (
         <div>
