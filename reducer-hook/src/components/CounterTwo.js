@@ -1,14 +1,16 @@
 import React, {useReducer} from 'react';
 
-const initialState = 0;
+const initialState = {
+    firstCount: 0
+};
 const reducer = (state, action) => {
-    switch (action) {
+    switch (action.type) {
         case 'increment':
-            return state + 1;
+            return {firstCount: state.firstCount + 1};
         case 'decrement':
-            return state - 1;
+            return  {firstCount: state.firstCount - 1};
         case 'reset':
-            return initialState;
+            return  {firstCount: 0};
         default:
             return state;
     }
@@ -19,10 +21,10 @@ const CounterTwo = () => {
 
     return (
         <div>
-            <div>Count - {count}</div>
-            <button onClick={() => dispatch('increment')}>Increment</button>
-            <button onClick={() => dispatch('decrement')}>Decrement</button>
-            <button onClick={() => dispatch('reset')}>Reset</button>
+            <div>Count - {count.firstCount}</div>
+            <button onClick={() => dispatch({type: 'increment'})}>Increment</button>
+            <button onClick={() => dispatch({type: 'decrement'})}>Decrement</button>
+            <button onClick={() => dispatch({type: 'reset'})}>Reset</button>
         </div>
     );
 };

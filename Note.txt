@@ -18,11 +18,13 @@ React Hooks Tutorial - 12 - Fetching data with useEffect Part 1
 React Hooks Tutorial - 13 - Fetching data with useEffect Part 2
 React Hooks Tutorial - 14 - Fetching data with useEffect Part 3
 React Hooks Tutorial - 16 - useContext Hook Part 2
+React Hooks Tutorial - 20 - useReducer (complex state & action)
 
 
 Important files:
 C:\react\react-hooks-tutorial\effect-hook\src\components\IntervalHookCounter.js
 C:\react\react-hooks-tutorial\effect-hook\src\components\DataFetching.js
+
 
 =================================================================================
 
