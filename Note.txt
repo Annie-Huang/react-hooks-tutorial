@@ -10,6 +10,7 @@ React Hooks Tutorial - 7 - useEffect after render
 React Hooks Tutorial - 8 - Conditionally run effects
 React Hooks Tutorial - 10 - useEffect with cleanup
 React Hooks Tutorial - 11 - useEffect with incorrect dependency
+React Hooks Tutorial - 12 - Fetching data with useEffect Part 1
 
 =================================================================================
 
@@ -63,3 +64,4 @@ When dealing with objects or arrays. always make sure to spread your state varia
 
 C:\react\react-hooks-tutorial>create-react-app state-hook
 C:\react\react-hooks-tutorial>create-react-app effect-hook
+C:\react\react-hooks-tutorial\effect-hook>npm install axios
