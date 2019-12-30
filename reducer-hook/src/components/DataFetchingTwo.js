@@ -31,7 +31,7 @@ const DataFetchingTwo = () => {
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts/1')
             .then(res => {
-                dispatch({type: 'FETCH_SUCCESS', value: res.data})
+                dispatch({type: 'FETCH_SUCCESS', payload: res.data})
             })
             .catch(err => {
                 dispatch({type: 'FETCH_ERROR'})
@@ -39,7 +39,8 @@ const DataFetchingTwo = () => {
     }, []);
     return (
         <div>
-            
+            {state.loading ? 'Loading' :  state.post.title}
+            {state.error ? state.error : null}
         </div>
     );
 };
