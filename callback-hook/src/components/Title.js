@@ -9,4 +9,5 @@ function Title() {
     )
 }
 
-export default Title;
+// Adding React.memo so this functional component will not be rerendered if the props or state do not change.
+export default React.memo(Title)

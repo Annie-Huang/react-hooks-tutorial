@@ -5,4 +5,5 @@ function Count({ text, count }) {
     return <div>{text} - {count}</div>
 }
 
-export default Count
+// Adding React.memo so this functional component will not be rerendered if the props or state do not change.
+export default React.memo(Count)

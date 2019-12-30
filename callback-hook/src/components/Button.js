@@ -9,4 +9,5 @@ function Button({ handleClick, children }) {
     )
 }
 
-export default Button
+// Adding React.memo so this functional component will not be rerendered if the props or state do not change.
+export default React.memo(Button)
