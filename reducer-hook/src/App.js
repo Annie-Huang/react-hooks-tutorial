@@ -7,6 +7,9 @@ import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import ComponentC from "./components/ComponentC";
 
+export const CountContext = React.createContext();
+
+
 const initialState = 0;
 const reducer = (state, action) => {
     switch (action) {
@@ -25,15 +28,17 @@ function App() {
     const [count, dispatch] = useReducer(reducer, initialState);
 
     return (
-        <div className="App">
-            {/*<CounterOne />*/}
-            {/*<CounterTwo />*/}
-            {/*<CounterThree/>*/}
-            Count - {count}
-            <ComponentA />
-            <ComponentB />
-            <ComponentC />
-        </div>
+        <CountContext.Provider value={ countState: count, countDispatch: dispatch }>
+            <div className="App">
+                {/*<CounterOne />*/}
+                {/*<CounterTwo />*/}
+                {/*<CounterThree/>*/}
+                Count - {count}
+                <ComponentA />
+                <ComponentB />
+                <ComponentC />
+            </div>
+        </CountContext.Provider>
     );
 }
 
