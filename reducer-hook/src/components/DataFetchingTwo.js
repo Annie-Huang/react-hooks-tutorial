@@ -28,6 +28,15 @@ const reducer = (state, action) => {
 const DataFetchingTwo = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
+    useEffect(() => {
+        axios.get('https://jsonplaceholder.typicode.com/posts/1')
+            .then(res => {
+                dispatch({type: 'FETCH_SUCCESS', value: res.data})
+            })
+            .catch(err => {
+                dispatch({type: 'FETCH_ERROR'})
+            })
+    }, []);
     return (
         <div>
             
