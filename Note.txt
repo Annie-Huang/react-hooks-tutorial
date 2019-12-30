@@ -6,6 +6,8 @@ https://jsonplaceholder.typicode.com/
 https://jsonplaceholder.typicode.com/posts
 https://jsonplaceholder.typicode.com/posts/1
 
+https://kentcdodds.com/blog/usememo-and-usecallback
+
 UP TO:
 React Hooks Tutorial - 2 - useState Hook
 React Hooks Tutorial - 3 - useState with previous state
