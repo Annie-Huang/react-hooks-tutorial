@@ -18,13 +18,18 @@ function ParentComponent() {
     // Read notes in Note.txt
     // It means React will cache incrementAge function and return that if age is not incremented.
     // If the age has change, then a new function will be returned.
-    const incrementAge = () => {
+    //
+    // I feel this has to be use all the times...
+    const incrementAge = useCallback(() => {
         setAge(age + 1);
-    };
+    }, [age]);
 
-    const incrementSalary = () => {
+    // const incrementSalary = () => {
+    //     setSalary(salary + 1000);
+    // };
+    const incrementSalary = useCallback(() => {
         setSalary(salary + 1000);
-    };
+    }, [salary]);
 
     return (
         <div>
