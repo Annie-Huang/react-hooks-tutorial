@@ -28,7 +28,7 @@ function App() {
     const [count, dispatch] = useReducer(reducer, initialState);
 
     return (
-        <CountContext.Provider value={ countState: count, countDispatch: dispatch }>
+        <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
             <div className="App">
                 {/*<CounterOne />*/}
                 {/*<CounterTwo />*/}
