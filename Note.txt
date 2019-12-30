@@ -146,3 +146,4 @@ C:\react\react-hooks-tutorial>create-react-app context-hook
 C:\react\react-hooks-tutorial>create-react-app reducer-hook
 C:\react\react-hooks-tutorial\reducer-hook>npm install axios
 C:\react\react-hooks-tutorial>create-react-app callback-hook
+C:\react\react-hooks-tutorial>create-react-app memo-hook
