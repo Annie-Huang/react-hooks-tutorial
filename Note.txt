@@ -137,6 +137,11 @@ Seems need to use it with React.memo.
 ParentComponent: useCallback
 ChildComponent: React.memo
 
+9. useMemo Hook
+#############################
+useCallback cache the the provided function itself.
+useMemo invoked the provided function and cache its result.
+
 =============================================================================
 
 C:\react\react-hooks-tutorial>create-react-app state-hook

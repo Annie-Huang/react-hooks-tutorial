@@ -20,6 +20,9 @@ const Counter = () => {
     //     while (i < 2000000000) i++;
     //     return counterOne % 2 === 0;
     // };
+
+    // useCallback cache the the provided function itself.
+    // useMemo invoked the provided function and cache its result.
     const isEven = useMemo(() => {
         let i = 0;
         while (i < 2000000000) i++;
