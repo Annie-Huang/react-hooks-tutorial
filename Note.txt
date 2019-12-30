@@ -104,6 +104,11 @@ singleValue = reducer(accumulator, itemValue)       | newState = reducer(current
 reduce method returns a single value                | useReducer returns a pair of value. [newState, dispatch]
 
 
+6. useReducer with useContext
+#############################
+useReducer - Local state management
+Share state between components - Global state management
+useReducer + useContext
 
 
 =============================================================================
