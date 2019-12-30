@@ -6,6 +6,7 @@ import CounterThree from "./components/CounterThree";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import ComponentC from "./components/ComponentC";
+import DataFetchingOne from "./components/DataFetchingOne";
 
 export const CountContext = React.createContext();
 
@@ -33,10 +34,11 @@ function App() {
                 {/*<CounterOne />*/}
                 {/*<CounterTwo />*/}
                 {/*<CounterThree/>*/}
-                Count - {count}
-                <ComponentA />
-                <ComponentB />
-                <ComponentC />
+                {/*Count - {count}*/}
+                {/*<ComponentA />*/}
+                {/*<ComponentB />*/}
+                {/*<ComponentC />*/}
+                <DataFetchingOne />
             </div>
         </CountContext.Provider>
     );
