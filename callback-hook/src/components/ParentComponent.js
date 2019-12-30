@@ -8,9 +8,16 @@ function ParentComponent() {
     const [salary, setSalary] = useState(50000);
 
     // a new incrementAge function is created when each time the parent component rerenders.
-    // when dealing with functions, we always need to consider of reference Equivity.
+    // when dealing with functions, we always need to consider of reference equality.
     // So the function before the rerender is different from the function after the rerender because their pointer is different.
     // And because the function is a props, the React see the props has changed, so rerender the child again.
+    // const incrementAge = () => {
+    //     setAge(age + 1);
+    // };
+
+    // Read notes in Note.txt
+    // It means React will cache incrementAge function and return that if age is not incremented.
+    // If the age has change, then a new function will be returned.
     const incrementAge = () => {
         setAge(age + 1);
     };
