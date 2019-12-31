@@ -4,9 +4,14 @@ const UserForm = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
+    const submitHandler = e => {
+        e.preventDefault();
+        alert(`Hello ${firstName} ${lastName}`);
+    };
+
     return (
         <div>
-            <form>
+            <form onSubmit={submitHandler}>
                 <div>
                     <label>First name</label>
                     <input
@@ -21,6 +26,7 @@ const UserForm = () => {
                         type="text"
                     />
                 </div>
+                <button>Submit</button>
             </form>
         </div>
     );
