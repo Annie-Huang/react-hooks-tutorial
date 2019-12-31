@@ -11,6 +11,8 @@ const UserForm = () => {
     const submitHandler = e => {
         e.preventDefault();
         alert(`Hello ${firstName} ${lastName}`);
+        resetFirstName();
+        resetLastName();
     };
 
     // Very smart way to do binding. I never thought of doing it like this before.
