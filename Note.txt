@@ -144,6 +144,14 @@ ChildComponent: React.memo
 useCallback cache the the provided function itself.
 useMemo invoked the provided function and cache its result.
 
+10. Custom Hook
+#############################
+A custom Hook is basically a JavaScript function whose name starts with 'use'.
+A custom hook can also call other Hooks if required.
+
+Why?
+Share logic - Alternative to HOCs and Render Props
+
 =============================================================================
 
 C:\react\react-hooks-tutorial>create-react-app state-hook
