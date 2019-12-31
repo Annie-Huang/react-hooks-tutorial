@@ -9,9 +9,17 @@ const UserForm = () => {
             <form>
                 <div>
                     <label>First name</label>
-                    <input type="text" />
+                    <input
+                        value={firstName}
+                        onChange={e => setFirstName(e.target.value)}
+                        type="text"
+                    />
                     <label>Last name</label>
-                    <input type="text" />
+                    <input
+                        value={lastName}
+                        onChange={e => setLastName(e.target.value)}
+                        type="text"
+                    />
                 </div>
             </form>
         </div>
