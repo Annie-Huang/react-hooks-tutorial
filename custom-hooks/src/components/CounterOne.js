@@ -14,7 +14,7 @@ const CounterOne = () => {
     //     setCount(0);
     // };
 
-    const [count, increment, decrement, reset] = useCounter();
+    const [count, increment, decrement, reset] = useCounter(0, 1);
 
     return (
         <div>

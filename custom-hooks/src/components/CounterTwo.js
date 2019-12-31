@@ -14,7 +14,7 @@ const CounterTwo = () => {
     //     setCount(0);
     // };
 
-    const [count, increment, decrement, reset] = useCounter(10);
+    const [count, increment, decrement, reset] = useCounter(10, 10);
 
     return (
         <div>
