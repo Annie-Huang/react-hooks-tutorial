@@ -122,7 +122,7 @@ DataFetchingTwp: useReducer + useEffect
 
 Scenario                        | useState                                          | useReducer
 Type of state                   | Number, String, Boolean (e.g. count:number)       | Object or Array (people object)
-Number of state transitions      | One or two                                        | Too many (if you see 5-6 setXX calls, should definitely move to reducer, so everything is in one place, easy to read by other developers)
+Number of state transitions     | One or two                                        | Too many (if you see 5-6 setXX calls, should definitely move to reducer, so everything is in one place, easy to read by other developers)
 Related state transitions?      | No                                                | Yes (if multiple of the properties all update at the same time for a state change, choose useReducer, easy to read)
 Business logic                  | No business logic                                 | Complex business logic
 Local vs global                 | Local                                             | Global
